@@ -1,7 +1,12 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <qmessagebox.h>
 #include "ui_hello_qt.h"
+
+#include <cstdlib>
+#include <string>
+#include <time.h>
 
 class hello_qt : public QMainWindow
 {
@@ -13,4 +18,10 @@ public:
 
 private:
 	Ui::hello_qtClass ui;
+
+public:
+	int answer;
+
+public slots:
+	void checkAnswer();
 };
