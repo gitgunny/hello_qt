@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_qt_20230801", "hello_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_qt_20230802", "hello_qt_20230802\hello_qt_20230802.vcxproj", "{8B950BCF-ECD9-4676-AB63-3FB965494C39}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_qt_quick_20230812", "hello_qt_quick_20230812\hello_qt_quick_20230812.vcxproj", "{BE2A7EF5-9727-4936-8210-5E727E6D6AE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,10 @@ Global
 		{8B950BCF-ECD9-4676-AB63-3FB965494C39}.Debug|x64.Build.0 = Debug|x64
 		{8B950BCF-ECD9-4676-AB63-3FB965494C39}.Release|x64.ActiveCfg = Release|x64
 		{8B950BCF-ECD9-4676-AB63-3FB965494C39}.Release|x64.Build.0 = Release|x64
+		{BE2A7EF5-9727-4936-8210-5E727E6D6AE7}.Debug|x64.ActiveCfg = Debug|x64
+		{BE2A7EF5-9727-4936-8210-5E727E6D6AE7}.Debug|x64.Build.0 = Debug|x64
+		{BE2A7EF5-9727-4936-8210-5E727E6D6AE7}.Release|x64.ActiveCfg = Release|x64
+		{BE2A7EF5-9727-4936-8210-5E727E6D6AE7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
