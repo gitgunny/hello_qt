@@ -9,12 +9,22 @@ Window {
     visible: true
     title: qsTr("Gunny Arduino Control")
 
+//    Connections {
+//        target: Indicator
+//        onLeftSignalSent: {
+//            Indicator.getLeftIndicatorVisible(leftIndicator.visible);
+//        }
+//        onRightSignalSent: {
+//            Indicator.getRightIndicatorVisible(rightIndicator.visible);
+//        }
+//    }
+
     Indicator {
         id: indicator
-        onLeftSignal: {
+        onLeftSignalSent: {
             indicator.getLeftIndicatorVisible(leftIndicator.visible);
         }
-        onRightSignal: {
+        onRightSignalSent: {
             indicator.getRightIndicatorVisible(rightIndicator.visible);
         }
     }
@@ -45,7 +55,7 @@ Window {
         height: 300
         text: qsTr("좌측 깜빡이")
         onClicked: {
-//            Indicator.getLeftIndicatorVisible(leftIndicator.visible);
+//            Indicator.sendLeftSignal();
             indicator.sendLeftSignal();
         }
     }
@@ -58,7 +68,7 @@ Window {
         height: 300
         text: qsTr("우측 깜빡이")
         onClicked: {
-//            Indicator.getRightIndicatorVisible(rightIndicator.visible);
+//            Indicator.sendRightSignal();
             indicator.sendRightSignal();
         }
     }

@@ -7,15 +7,15 @@
 
 int main(int argc, char* argv[])
 {
-	QGuiApplication app(argc, argv);
-	QQmlApplicationEngine engine;
+    QGuiApplication app(argc, argv);
+    QQmlApplicationEngine engine;
 
-	//    Indicator indicator;
-	//    engine.rootContext()->setContextProperty("Indicator", &indicator);
+    //    Indicator indicator;
+    //    engine.rootContext()->setContextProperty("Indicator", &indicator);
 
-	qmlRegisterType<Indicator>("Indicator", 1, 0, "Indicator");
+    qmlRegisterType<Indicator>("Indicator", 1, 0, "Indicator");
 
-	engine.load(QUrl("qrc:/main.qml"));
+    engine.load(QUrl("qrc:/main.qml"));
 
-	return app.exec();
+    return app.exec();
 }
