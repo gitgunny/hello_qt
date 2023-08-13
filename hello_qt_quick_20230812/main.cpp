@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 	Indicator indicator;
 	engine.rootContext()->setContextProperty("Indicator", &indicator);
 
-	engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+	engine.load(QUrl("qrc:/main.qml"));
 
 	return app.exec();
 }

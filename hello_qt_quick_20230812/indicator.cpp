@@ -4,16 +4,26 @@ Indicator::Indicator(QObject* parent) : QObject(parent)
 {
 }
 
+void Indicator::sendLeftSignal()
+{
+    emit leftSignalSent();
+}
+
+void Indicator::sendRightSignal()
+{
+    emit rightSignalSent();
+}
+
 void Indicator::getLeftIndicatorVisible(bool visible)
 {
-	leftIndicatorVisible = visible;
+    leftIndicatorVisible = visible;
 
-	qDebug() << "LeftIndicatorVisible Value : " << leftIndicatorVisible;
+    qDebug() << "LeftIndicatorVisible Value : " << leftIndicatorVisible;
 }
 
 void Indicator::getRightIndicatorVisible(bool visible)
 {
-	rightIndicatorVisible = visible;
+    rightIndicatorVisible = visible;
 
-	qDebug() << "RightIndicatorVisible Value : " << rightIndicatorVisible;
+    qDebug() << "RightIndicatorVisible Value : " << rightIndicatorVisible;
 }

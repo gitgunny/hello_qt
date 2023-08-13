@@ -6,16 +6,22 @@
 
 class Indicator : public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 
 public:
-	Indicator(QObject* parent = nullptr);
+    Indicator(QObject* parent = nullptr);
+
+signals:
+    void leftSignalSent();
+    void rightSignalSent();
 
 public slots:
-	void getLeftIndicatorVisible(bool visible);
-	void getRightIndicatorVisible(bool visible);
+    void sendLeftSignal();
+    void sendRightSignal();
+    void getLeftIndicatorVisible(bool visible);
+    void getRightIndicatorVisible(bool visible);
 
 private:
-	bool leftIndicatorVisible;
-	bool rightIndicatorVisible;
+    bool leftIndicatorVisible;
+    bool rightIndicatorVisible;
 };
